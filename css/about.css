@@ -1,0 +1,111 @@
+.mixed-block{
+    padding-top:10px;
+    clear:both;
+    overflow:hidden}
+    .mixed-block .block .content{
+        height:420px;
+        padding:50px 40px 0;
+        justify-content:flex-start;
+        -webkit-justify-content:flex-start}
+@media (max-width:530px){
+    .mixed-block .block .content{
+        padding:50px 20px 0}}
+.mixed-block .block .content:after{
+    background:rgba(0,0,0,.2)}
+    .mixed-block .block .content.small{
+        height:200px;padding:50px 20px 0}
+.mixed-block .block .content h3{
+    font-family:utopia-std;
+font-size:34px;
+line-height:48px;
+position:relative;
+margin-bottom:20px}
+.mixed-block .block .content h3:after{
+    position:absolute;
+    content:"";
+    background-color:#ffdd19;
+    width:100px;
+    height:2px;
+    bottom:-5px;
+    left:0}
+    .mixed-block .block .content p{
+        line-height:16px}
+ @media (max-width:940px){
+    .mixed-block .block .content.shrink{
+        height:410px}}
+@media (max-width:530px){
+.mixed-block .block .content.shrink{
+    height:200px}}
+    @media (max-width:940px){
+.mixed-block .block .content.shrink.small{
+    height:200px}}
+    @media (max-width:940px){
+        .mixed-block .wide{
+            width:720px}}
+            @media (max-width:760px){
+                .mixed-block .wide{
+    width:570px}}
+    @media (max-width:610px){
+        .mixed-block .wide{
+            width:490px}}
+            @media (max-width:530px){
+.mixed-block .wide{
+    width:calc(100% - 10px)}}
+    @media (max-width:940px){
+.mixed-block .grid-6 .row .grid-6{
+    width:50%}}
+    @media (max-width:530px){
+        .mixed-block .grid-6 .row .grid-6{
+            width:100%}}
+ .conde{margin:0 100px;
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    padding:70px 100px}
+    .conde img{
+        width:200px}
+        .contact{
+            background-image:url(img/GEC-Elephant-Blog.jpg);
+            background-color: #000;
+            background-size:cover;
+            background-position:50%;
+            padding:140px 0;
+            position:relative;
+            margin-bottom:50px}
+            @media (max-width:940px){
+                .contact{padding:50px 0}}
+.contact .wrapper{
+    margin-bottom:0}
+    .contact .wrapper .contact-info{
+        margin:0;
+        text-align:center}
+.contact .wrapper .contact-info h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#fff;
+    position:relative;
+    margin-bottom:50px;
+    font-size:20px;
+    line-height:48px}
+    .contact .wrapper .contact-info h3:after{
+        font-family: 'Times New Roman', Times, serif;
+        position:absolute;
+        content:"";
+        background-color:#ffdd19;
+        width:100px;
+        height:2px;
+        bottom:-15px;
+        left:calc(50% - 50px)}
+.contact .wrapper .contact-info p,.contact .wrapper .contact-info p a,.full-bg .wrapper .content h3{
+    color:#fff 
+     }
+    @media (max-width:940px){
+        .full-bg.white{
+ margin:50px 0}}
+ .full-bg.white .content{
+    margin:90px 0}
+@media (max-width:940px){
+    .full-bg.white .content{
+        margin:0}}
+        .full-bg.white .content h3{
+            color:#000}
+            
+            .inline-image{height:300px}

@@ -1,0 +1,31 @@
+header .primary{
+    background-color:#000}
+    @media (max-width:760px){
+.full-bg.white .wrapper{
+margin:50px auto}}
+.full-bg.white .wrapper .content h4{
+margin-top:20px}
+@media (max-width:760px){
+.full-bg.white .wrapper .content h4,.full-bg.white .wrapper .content p{
+text-align:center}}
+.full-bg.white .wrapper [class^=grid-]{
+    -webkit-align-self:flex-start;
+    align-self:flex-start}
+    .mobile-tabs select{
+font-family:utopia-std,serif;
+font-size:16px}
+@media (min-width:760px){
+.mobile-tabs{display:none}}
+.read-more{
+    height:350px;
+overflow:hidden;
+position:relative}
+.read-more:after{
+    content:"";
+    position:absolute;
+    left:0;right:0;bottom:0;
+    top:0;
+    background:-moz-linear-gradient(top,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 80%,#fff 100%);
+    background:-webkit-linear-gradient(top,hsla(0,0%,100%,0),hsla(0,0%,100%,0) 80%,#fff);
+    background:linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 80%,#fff)}.read-more.active{height:auto}.read-more.active:after{content:none}.read-more-toggle{position:relative}.read-more-toggle:after{content:"";position:absolute;width:100%;height:1px;
+        background:#000;left:0;top:14px}.read-more-toggle span{background:#fff;position:relative;z-index:1;padding:0 10px 0 0;cursor:pointer}.read-more-toggle span i{font-size:18px!important;color:#000!important;margin-right:5px}@media (max-width:760px){.three-product .product{width:345px}}@media (max-width:500px){.three-product .product{width:235px}}
