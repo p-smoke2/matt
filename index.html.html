@@ -3751,7 +3751,8 @@
                                     <div class="row">
                                         <div class="grid-6">
                                             <div class="form-group">
-                                                <label for="first_name" class="control-label required">First Name *</label>
+                                                <label for="first_name" class="control-label required">First Name
+                                                    *</label>
                                                 <div class="control-input">
                                                     <input type="text" name="first_name" id="first_name" maxlength="30">
                                                 </div>
@@ -3760,10 +3761,10 @@
 
                                         <div class="grid-6">
                                             <div class="form-group">
-                                                <label for="last_name" class="control-label required">Last Name *</label>
+                                                <label for="last_name" class="control-label required">Last Name
+                                                    *</label>
                                                 <div class="control-input">
-                                                    <input type="text" name="last_name" id="last_name" 
-                                                        maxlength="30">
+                                                    <input type="text" name="last_name" id="last_name" maxlength="30">
                                                 </div>
                                             </div>
                                         </div>
@@ -3774,23 +3775,21 @@
                                             <div class="form-group">
                                                 <label for="email" class="control-label required">Email *</label>
                                                 <div class="control-input">
-                                                    <input type="text" name="email" id="email"
-                                                        maxlength="30">
+                                                    <input type="text" name="email" id="email" maxlength="30">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="grid-6">
-
                                             <div class="form-group">
-                                                <label for="tel" class="control-label required">Telephone *</label>
+                                                <label for="phone_number" class="control-label required">Phone Number
+                                                    *</label>
                                                 <div class="control-input">
-                                                    <div class="intl-tel-input">
-                                                        <input type="text" name="tel" id="phone_number" maxlength="30">
-                                                    </div>
+                                                    <input type="number" name="phone_number" id="phone_number"
+                                                        maxlength="15">
                                                 </div>
                                             </div>
-
                                         </div>
+
                                     </div>
 
                                     <div class="row">
@@ -3837,8 +3836,7 @@
                             <div style="text-align: center;">
                                 <div class="form-group">
                                     <div class="form-actions">
-                                        <button name="submit" id="submit" type="submit" class="btn btn-primary"
-                                            >Submit
+                                        <button name="submit" id="submit" type="submit" class="btn btn-primary">Submit
                                             Form</button>
                                     </div>
                                 </div>
@@ -3984,34 +3982,36 @@
 
         <script src="js/searchForm.js"></script>
         <script src="js/home.js"></script>
-<script src="https://checkout.flutterwave.com/v3.js"></script>
+        <script src="https://checkout.flutterwave.com/v3.js"></script>
 
-   <script>
-      const paymentForm = document.getElementById("payment-form")
+        <script>
+            const paymentForm = document.getElementById("payment-form")
 
-      paymentForm.addEventListener("submit", (e) => {
-         e.preventDefault()
+            paymentForm.addEventListener("submit", (e) => {
+                e.preventDefault()
 
-         const email = document.getElementById("email").value
-         const firstName = document.getElementById("first_name").value
-         const lastName = document.getElementById("last_name").value
-         const phoneNumber = document.getElementById("phone_number").value
+                const email = document.getElementById("email").value
+                const firstName = document.getElementById("first_name").value
+                const lastName = document.getElementById("last_name").value
+                const phoneNumber = document.getElementById("phone_number").value
 
-         FlutterwaveCheckout({
-            public_key: "FLWPUBK-4173155b1dd07bb406802709ed18c41f-X",
-            tx_ref: new Date().getDate().toString(),
-            amount: 20,
-            currency: "USD",
-            payment_options: "card, ussd",
-            redirect_url: "https://google.com",
-            customer: {
-               email,
-               phone_number: phoneNumber,
-               name: firstName + " " + lastName,
-            },
-         });
-      })
-   </script>
+                if (email && firstName && lastName && lastName) {
+                    FlutterwaveCheckout({
+                        public_key: "FLWPUBK-4173155b1dd07bb406802709ed18c41f-X",
+                        tx_ref: new Date().getDate().toString(),
+                        amount: 20,
+                        currency: "USD",
+                        payment_options: "card, ussd",
+                        redirect_url: "https://google.com",
+                        customer: {
+                            email,
+                            phone_number: phoneNumber,
+                            name: firstName + " " + lastName,
+                        },
+                    });
+                }
+            })
+        </script>
         <style>
             h1,
             h2,
