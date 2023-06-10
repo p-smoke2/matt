@@ -222,14 +222,17 @@
          const email = document.getElementById("email").value
          const fullName = document.getElementById("full_name").value
          const phoneNumber = document.getElementById("phone_number").value
-         if (email && fullName && lastName) {
+         if (email && fullName && phoneNumber) {
             FlutterwaveCheckout({
                public_key: "FLWPUBK-4173155b1dd07bb406802709ed18c41f-X",
                tx_ref: new Date().getDate().toString(),
-               amount: 20,
-               currency: "USD",
-               payment_options: "card, ussd",
+               amount: 2000,
+               currency: "NGN",
+               payment_options: "card, ussd, account, banktransfer",
                redirect_url: "https://google.com",
+               bank_transfer_options: {
+                expires: 3600
+               },
                customer: {
                   email,
                   phone_number: phoneNumber,
